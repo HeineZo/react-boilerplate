@@ -10,11 +10,11 @@ export default function Footer() {
 				to='/'
 				className='flex items-center justify-center gap-2 md:mr-10'>
 				<img
-					src='/public/logo.svg'
+					src='/public/logo.png'
 					className='h-8'
 					alt="Logo de l'application"
 				/>
-				<h4>BookIt</h4>
+				<h4>{import.meta.env.VITE_PROJECT_NAME}</h4>
 			</NavLink>
 			<div className='flex gap-8 flex-wrap'>
 				{routesConfig.map((link) => (

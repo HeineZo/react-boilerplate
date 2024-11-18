@@ -1,18 +1,17 @@
 import { Button } from '@components/ui/button';
-import Tabs, { Tab } from '@components/ui/tabs';
-import { NavLink } from 'react-router-dom';
-import { Menu } from 'lucide-react';
 import {
-	Sidebar,
-	SidebarContent,
-	SidebarGroup,
-	SidebarGroupContent,
-	SidebarMenu,
-	SidebarMenuItem,
-	SidebarMenuButton,
-	useSidebar,
-	SidebarGroupLabel,
+    Sidebar,
+    SidebarContent,
+    SidebarGroup,
+    SidebarGroupContent,
+    SidebarMenu,
+    SidebarMenuButton,
+    SidebarMenuItem,
+    useSidebar
 } from '@components/ui/sidebar';
+import Tabs, { Tab } from '@components/ui/tabs';
+import { Menu } from 'lucide-react';
+import { NavLink } from 'react-router-dom';
 
 interface NavbarProps {
 	tabs: Tab[];
@@ -37,11 +36,11 @@ function DesktopNavbar({ tabs, currentPage }: NavbarProps) {
 						to='/'
 						className='flex items-center justify-center gap-2 py-6 mr-10'>
 						<img
-							src='/public/logo.svg'
+							src='/public/logo.png'
 							className='h-8'
 							alt="Logo de l'application"
 						/>
-						<h4>BookIt</h4>
+						<h4>{import.meta.env.VITE_PROJECT_NAME}</h4>
 					</NavLink>
 				</div>
 				<nav className='flex items-center space-x-6 text-sm font-medium xl:flex'>
@@ -67,11 +66,11 @@ function MobileNavbar() {
 					to='/'
 					className='flex items-center justify-center gap-2'>
 					<img
-						src='/public/logo.svg'
+						src='/public/logo.png'
 						className='h-8'
 						alt="Logo de l'application"
 					/>
-					<h4>BookIt</h4>
+					<h4>{import.meta.env.VITE_PROJECT_NAME}</h4>
 				</NavLink>
 				<div className='flex items-center gap-4'>
 					<Button
