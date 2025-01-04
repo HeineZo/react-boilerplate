@@ -40,6 +40,10 @@ $ npm install
 $ npm run dev
 ```
 
+Enfin, créez un fichier `.env` à la racine du projet en copiant les informations présente dans `.env.exemple`
+
+Ajoutez-y le nom de votre projet afin qu'il soit affiché aux divers endroits de l'application 😉
+
 ## 🕹️ Technologies
 
 <img src="https://skillicons.dev/icons?i=react,tailwind,vite" alt="Les technologies utilisées" />
